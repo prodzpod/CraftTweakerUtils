@@ -213,4 +213,84 @@ public class Math {
 	{
 		return new RandomWrapper(new Random(seed));
 	}
+	
+	@ZenMethod
+	public static double hypot(double d1, double d2) {
+		return java.lang.Math.hypot(d1, d2);
+	}
+
+	@ZenMethod
+	public static float hypot(float d1, float d2) {
+		return (float) hypot((double)d1, d2);
+	}
+
+	@ZenMethod
+	public static double log(double d1, double d2) {
+		return java.lang.Math.log(d1) / java.lang.Math.log(d2);
+	}
+
+	@ZenMethod
+	public static float log(float d1, float d2) {
+		return (float) log((double)d1, d2);
+	}
+
+	@ZenMethod
+	public static double ln(double d) {
+		return java.lang.Math.log(d);
+	}
+
+	@ZenMethod
+	public static float ln(float d) {
+		return (float) ln((double)d);
+	}
+
+	@ZenMethod
+	public static double log10(double d) {
+		return java.lang.Math.log10(d);
+	}
+
+	@ZenMethod
+	public static float log10(float d) {
+		return (float) log10((double)d);
+	}
+
+	@ZenMethod
+	public static double pow(double d1, double d2) {
+		return java.lang.Math.pow(d1, d2);
+	}
+
+	@ZenMethod
+	public static float pow(float d1, float d2) {
+		return (float) pow((double)d1, d2);
+	}
+
+	@ZenMethod
+	public static long pow(long d1, long d2) {
+		return (long) pow((double)d1, d2);
+	}
+
+	@ZenMethod
+	public static int pow(int d1, int d2) {
+		return (int) pow((double)d1, d2);
+	}
+
+	@ZenMethod
+	public static double signum(double d) {
+		return java.lang.Math.signum(d);
+	}
+
+	@ZenMethod
+	public static float signum(float d) {
+		return (float) signum((double)d);
+	}
+
+	@ZenMethod
+	public static long signum(long d) {
+		return (long) signum((double)d);
+	}
+
+	@ZenMethod
+	public static int signum(int d) {
+		return (int) signum((double)d);
+	}
 }
